@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <section id="first">
+    <h1>First Heading</h1>
+    <img src="network-concept.jpg" alt="" width="100%" height="500px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati a quos
+      reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit adipisci
+      eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati
+      a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit
+      adipisci eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor
+      obcaecati a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident
+      fugit adipisci eveniet.</p>
+  </section>
+
+  <hr><br><br><br><br><br><br><br><br><br>
+
+  <section id="second" class="animate__animated">
+    <h1>Second Heading</h1>
+    <img src="network-concept.jpg" alt="" width="100%" height="500px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati a quos
+      reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit adipisci
+      eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati
+      a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit
+      adipisci eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor
+      obcaecati a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident
+      fugit adipisci eveniet.</p>
+  </section>
+
+  <hr><br><br><br><br><br><br><br><br><br>
+
+  <section id="third">
+    <h1>Third Heading</h1>
+    <img src="network-concept.jpg" alt="" width="100%" height="500px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati a quos
+      reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit adipisci
+      eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor obcaecati
+      a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident fugit
+      adipisci eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nam! Maxime saepe dolor
+      obcaecati a quos reprehenderit eligendi asperiores nostrum, eos labore exercitationem omnis sit, sint provident
+      fugit adipisci eveniet.</p>
+  </section>
+
+  <hr><br><br><br><br><br><br><br><br><br>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.scrolling.js"> </script>
+  <script>
+    $(document).ready(function () {
+      $('#second').scrolling({ offsetTop: -100 });
+
+      $('#second').on('scrollin', function (event, $all_elements) {
+        $(this).addClass("animate__bounce");
+      });
+
+      $('#second').on('scrollout', function (event, $all_elements) {
+        $(this).removeClass("animate__bounce");
+      });
+    });
+  </script>
+</body>
+
+</html>
